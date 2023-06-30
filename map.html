@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>観光地マップ(京都編)</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+  <style>
+    #map {
+      height: 600px;
+      width: 100%;
+    }
+    #filter-buttons {
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+  <h1>おススメの観光地</h1>
+  <div>
+    <label for="search-input">Search: </label>
+    <input type="text" id="search-input" placeholder="Enter a place name" />
+  </div>
+  <div id="filter-buttons">
+    <button onclick="showAll()">Show All</button>
+  <button onclick="showAttractions()">Show Attractions</button>
+  <button onclick="showRestaurants()">Show Restaurants</button>
+  </div>
+
+  <button class="place-button" onclick="togglePlace('金閣寺')">金閣寺</button>
+  <button class="place-button" onclick="togglePlace('高台寺')">高台寺</button>
+  <button class="place-button" onclick="togglePlace('清水寺')">清水寺</button>
+  <button class="place-button" onclick="togglePlace('西本願寺')">西本願寺</button>
+  <button class="place-button" onclick="togglePlace('東本願寺')">東本願寺</button>
+  <button class="place-button" onclick="togglePlace('龍安寺')">龍安寺</button>
+  <button class="place-button" onclick="togglePlace('東寺')">東寺</button>
+  <button class="place-button" onclick="togglePlace('知恩院')">知恩院</button>
+  <button class="place-button" onclick="togglePlace('西陣織美術館')">西陣織美術館</button>
+  <button class="place-button" onclick="togglePlace('渡月橋')">渡月橋</button>
+  <button class="place-button" onclick="togglePlace('京都駅')">京都駅</button>
+  <button class="place-button" onclick="togglePlace('魚と和の隠れ家 神兵衛')">魚と和の隠れ家 神兵衛</button>
+  <button class="place-button" onclick="togglePlace('鍵善良房')">鍵善良房</button>
+  <button class="place-button" onclick="togglePlace('ZENCAFE')">ZENCAFE</button>
+  <button class="place-button" onclick="togglePlace('祇園いづ重')">祇園いづ重</button>
+  <button class="place-button" onclick="togglePlace('魚問屋ととや')">魚問屋ととや</button>
+
+
+
+
+
+
+  <div id="map"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script src="Java/Script.js"></script>
+</body>
+</html>
